@@ -672,18 +672,17 @@
       font-size: 0.85rem;
       font-weight: 700;
       color: #DC2626;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
+      line-height: 1.4;
     }
     .pulsing-dot {
+      display: inline-block;
       width: 8px;
       height: 8px;
       background: #DC2626;
       border-radius: 50%;
       animation: pulse 1.4s infinite;
-      flex-shrink: 0;
+      vertical-align: middle;
+      margin-right: 6px;
     }
     @keyframes pulse {
       0% { opacity: 1; transform: scale(1); }
@@ -1200,10 +1199,23 @@
         padding: 14px 20px;
       }
       .sales-toast {
-        bottom: 82px; /* Flota sobre el dock móvil */
+        bottom: 90px; /* Flota con más margen sobre el dock móvil */
         left: 14px;
-        right: 14px;
-        max-width: calc(100% - 28px);
+        right: auto;
+        max-width: 240px;
+        padding: 10px 12px;
+        gap: 8px;
+      }
+      .sales-toast .toast-icon {
+        width: 26px;
+        height: 26px;
+        font-size: 0.75rem;
+      }
+      .sales-toast .toast-text {
+        font-size: 0.7rem;
+      }
+      .sales-toast .toast-time {
+        display: none; /* ahorra espacio en pantallas pequeñas */
       }
       body {
         padding-bottom: 75px; /* Espacio final para que el dock no tape el footer */
