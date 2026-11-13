@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/favicon.png">
   <title>TU MARCA LOCAL | Páginas Web Profesionales para Negocios</title>
   <meta name="description" content="Páginas web profesionales para negocios locales desde $112. Dominio y hosting incluidos el primer año. Atrae clientes y convierte por WhatsApp.">
   
@@ -493,9 +495,22 @@
       border-color: var(--color-turquoise);
     }
     .demo-preview-img {
-      height: 180px;
+      height: 190px;
       position: relative;
+      overflow: hidden;
+      display: block;
+      background: #0B192C;
     }
+    .demo-preview-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+      transition: transform 0.4s;
+    }
+    .demo-card:hover .demo-preview-img img { transform: scale(1.04); }
+    .demo-content a.btn { text-align: center; }
     .demo-badge-ficticia {
       position: absolute;
       top: 12px;
@@ -1406,91 +1421,91 @@
       <div class="gallery-grid">
         <!-- Demo 1 -->
         <div class="demo-card">
-          <div class="demo-preview-img" style="background: linear-gradient(135deg, #0B192C, #F97316);">
+          <a class="demo-preview-img" href="https://tumarcalocal-cmd.github.io/LEX-ASOCIADOS/" target="_blank" rel="noopener"><img src="/demo-lex.webp" alt="Vista previa de la página" loading="lazy" width="720" height="325">
             <span class="demo-badge-ficticia">Negocio Ilustrativo</span>
-          </div>
+          </a>
           <div class="demo-content">
             <span class="demo-category">Servicios Profesionales</span>
-            <h3>Soluciones Técnicas 24</h3>
-            <p>Diseño corporativo en azul marino y naranja de alto impacto para contratistas, técnicos y mantenimiento.</p>
+            <h3>Lex & Asociados</h3>
+            <p>Diseño sobrio en azul noche y dorado que transmite confianza. Ideal para abogados, notarías, contadores y consultores.</p>
             <div class="demo-tags">
-              <span class="demo-tag">Cotizaciones</span>
-              <span class="demo-tag">Cobertura</span>
-              <span class="demo-tag">Urgencias</span>
+              <span class="demo-tag">Áreas de Práctica</span>
+              <span class="demo-tag">Sobre Nosotros</span>
+              <span class="demo-tag">Solicitar Consulta</span>
             </div>
-            <button class="btn btn-outline-white" onclick="openDemoModal('demo1')">VER DEMOSTRACIÓN</button>
+            <a class="btn btn-outline-white" href="https://tumarcalocal-cmd.github.io/LEX-ASOCIADOS/" target="_blank" rel="noopener">VER PÁGINA EN VIVO</a>
           </div>
         </div>
 
         <!-- Demo 2 -->
         <div class="demo-card">
-          <div class="demo-preview-img" style="background: linear-gradient(135deg, #0284C7, #10B981);">
+          <a class="demo-preview-img" href="https://tumarcalocal-cmd.github.io/CLINICA-DENTAL-MODERNA/" target="_blank" rel="noopener"><img src="/demo-dental.webp" alt="Vista previa de la página" loading="lazy" width="720" height="325">
             <span class="demo-badge-ficticia">Negocio Ilustrativo</span>
-          </div>
+          </a>
           <div class="demo-content">
-            <span class="demo-category">Salud y Clínica</span>
-            <h3>Clínica Vida Integral</h3>
-            <p>Estilo limpio, blanco, azul y verde enfocado en generar serenidad, credibilidad y cita médica inmediata.</p>
+            <span class="demo-category">Salud y Odontología</span>
+            <h3>Clínica Dental Moderna</h3>
+            <p>Estilo elegante en azul marino y dorado para clínicas dentales y consultorios que quieren llenar su agenda de citas.</p>
             <div class="demo-tags">
-              <span class="demo-tag">Especialidades</span>
-              <span class="demo-tag">Equipo Médico</span>
-              <span class="demo-tag">Citas WhatsApp</span>
+              <span class="demo-tag">Tratamientos</span>
+              <span class="demo-tag">Testimonios</span>
+              <span class="demo-tag">Agendar Cita</span>
             </div>
-            <button class="btn btn-outline-white" onclick="openDemoModal('demo2')">VER DEMOSTRACIÓN</button>
+            <a class="btn btn-outline-white" href="https://tumarcalocal-cmd.github.io/CLINICA-DENTAL-MODERNA/" target="_blank" rel="noopener">VER PÁGINA EN VIVO</a>
           </div>
         </div>
 
         <!-- Demo 3 -->
         <div class="demo-card">
-          <div class="demo-preview-img" style="background: linear-gradient(135deg, #7C2D12, #B45309);">
+          <a class="demo-preview-img" href="https://tumarcalocal-cmd.github.io/SABORES-BRASAS/" target="_blank" rel="noopener"><img src="/demo-sabores.webp" alt="Vista previa de la página" loading="lazy" width="720" height="325">
             <span class="demo-badge-ficticia">Negocio Ilustrativo</span>
-          </div>
+          </a>
           <div class="demo-content">
             <span class="demo-category">Gastronomía</span>
-            <h3>Sabor & Tradición</h3>
-            <p>Diseño gastronómico con énfasis en fotografía, cartas visuales, ubicación y pedidos rápidos a domicilio.</p>
+            <h3>Sabores & Brasas</h3>
+            <p>Diseño gastronómico oscuro y con fuego, con fotos que abren el apetito, menú, ubicación y pedidos directos por WhatsApp.</p>
             <div class="demo-tags">
               <span class="demo-tag">Menú Digital</span>
               <span class="demo-tag">Platos Estrella</span>
               <span class="demo-tag">Pedidos</span>
             </div>
-            <button class="btn btn-outline-white" onclick="openDemoModal('demo3')">VER DEMOSTRACIÓN</button>
+            <a class="btn btn-outline-white" href="https://tumarcalocal-cmd.github.io/SABORES-BRASAS/" target="_blank" rel="noopener">VER PÁGINA EN VIVO</a>
           </div>
         </div>
 
         <!-- Demo 4 -->
         <div class="demo-card">
-          <div class="demo-preview-img" style="background: linear-gradient(135deg, #0369A1, #06B6D4);">
-            <span class="demo-badge-ficticia">Negocio Ilustrativo</span>
-          </div>
+          <a class="demo-preview-img" href="https://cocos-tour-507.vercel.app/" target="_blank" rel="noopener"><img src="/demo-cocos.webp" alt="Vista previa de la página" loading="lazy" width="720" height="325">
+            <span class="demo-badge-ficticia">Cliente Real</span>
+          </a>
           <div class="demo-content">
             <span class="demo-category">Hotel y Turismo</span>
-            <h3>Paraíso Tropical Tours</h3>
-            <p>Visuales paradisíacos para empresas turísticas, excursiones y hospedajes que invitan a consultar disponibilidad.</p>
+            <h3>Cocos Tour PTY</h3>
+            <p>Página real de nuestro cliente en Punta Chame: islas, delfines y ballenas, versión en español e inglés y reservas por WhatsApp.</p>
             <div class="demo-tags">
-              <span class="demo-tag">Tours y Paquetes</span>
-              <span class="demo-tag">Galería</span>
+              <span class="demo-tag">Tours y Excursiones</span>
+              <span class="demo-tag">Bilingüe</span>
               <span class="demo-tag">Reservas</span>
             </div>
-            <button class="btn btn-outline-white" onclick="openDemoModal('demo4')">VER DEMOSTRACIÓN</button>
+            <a class="btn btn-outline-white" href="https://cocos-tour-507.vercel.app/" target="_blank" rel="noopener">VER PÁGINA EN VIVO</a>
           </div>
         </div>
 
         <!-- Demo 5 -->
         <div class="demo-card">
-          <div class="demo-preview-img" style="background: linear-gradient(135deg, #78350F, #D97706);">
+          <a class="demo-preview-img" href="https://tumarcalocal-cmd.github.io/AURA-Beauty-Studio/" target="_blank" rel="noopener"><img src="/demo-aura.webp" alt="Vista previa de la página" loading="lazy" width="720" height="325">
             <span class="demo-badge-ficticia">Negocio Ilustrativo</span>
-          </div>
+          </a>
           <div class="demo-content">
             <span class="demo-category">Belleza y Bienestar</span>
             <h3>Aura Beauty Studio</h3>
-            <p>Elegancia en tonos beige, blanco y detalles dorados. Ideal para estéticas, salones, spas y barberías premium.</p>
+            <p>Elegancia en tonos beige, blanco y café. Ideal para estéticas, salones, spas y barberías que agendan citas.</p>
             <div class="demo-tags">
               <span class="demo-tag">Tarifas</span>
               <span class="demo-tag">Catálogo de Servicios</span>
               <span class="demo-tag">Agenda WhatsApp</span>
             </div>
-            <button class="btn btn-outline-white" onclick="openDemoModal('demo5')">VER DEMOSTRACIÓN</button>
+            <a class="btn btn-outline-white" href="https://tumarcalocal-cmd.github.io/AURA-Beauty-Studio/" target="_blank" rel="noopener">VER PÁGINA EN VIVO</a>
           </div>
         </div>
       </div>
@@ -1532,7 +1547,7 @@
             Entrega estimada de 3 a 5 días hábiles, sujeta a confirmación y entrega de datos.
           </p>
 
-          <a href="https://wa.link/b2z6ed" target="_blank" rel="noopener" class="btn btn-electric" onclick="trackClickEvent('buy_plan_112')">
+          <a href="https://wa.me/50765278910?text=Hola%20Tu%20Marca%20Local%2C%20quiero%20informaci%C3%B3n%20sobre%20una%20p%C3%A1gina%20web" target="_blank" rel="noopener" class="btn btn-electric" onclick="trackClickEvent('buy_plan_112')">
             QUIERO MI WEB POR $112
           </a>
 
@@ -1563,7 +1578,7 @@
             <p style="font-size: 0.72rem; color: #166534; margin-top: 4px;">*Bonos solo incluidos al contratar este paquete.</p>
           </div>
 
-          <a href="https://wa.link/b2z6ed" target="_blank" rel="noopener" class="btn btn-navy" onclick="trackClickEvent('buy_plan_197')">
+          <a href="https://wa.me/50765278910?text=Hola%20Tu%20Marca%20Local%2C%20quiero%20informaci%C3%B3n%20sobre%20una%20p%C3%A1gina%20web" target="_blank" rel="noopener" class="btn btn-navy" onclick="trackClickEvent('buy_plan_197')">
             QUIERO MI PRESENCIA DIGITAL COMPLETA
           </a>
 
@@ -1646,10 +1661,10 @@
           <div class="form-group">
             <label for="quote-demo">3. Modelo de Diseño:</label>
             <select id="quote-demo" class="form-select" onchange="updateQuoteSummary()">
-              <option value="Modelo 1 - Soluciones Técnicas 24">Modelo 1: Soluciones Técnicas 24</option>
-              <option value="Modelo 2 - Clínica Vida Integral">Modelo 2: Clínica Vida Integral</option>
-              <option value="Modelo 3 - Sabor & Tradición">Modelo 3: Sabor & Tradición</option>
-              <option value="Modelo 4 - Paraíso Tropical Tours">Modelo 4: Paraíso Tropical Tours</option>
+              <option value="Modelo 1 - Lex & Asociados">Modelo 1: Lex & Asociados</option>
+              <option value="Modelo 2 - Clínica Dental Moderna">Modelo 2: Clínica Dental Moderna</option>
+              <option value="Modelo 3 - Sabores & Brasas">Modelo 3: Sabores & Brasas</option>
+              <option value="Modelo 4 - Cocos Tour PTY">Modelo 4: Cocos Tour PTY</option>
               <option value="Modelo 5 - Aura Beauty Studio">Modelo 5: Aura Beauty Studio</option>
               <option value="Todavía no lo sé (Asesoría)">Todavía no lo sé</option>
             </select>
@@ -1669,7 +1684,7 @@
           </div>
           <div class="summary-line">
             <span>Estilo Seleccionado:</span>
-            <strong id="summary-model-text">Modelo 1: Soluciones Técnicas 24</strong>
+            <strong id="summary-model-text">Modelo 1: Lex & Asociados</strong>
           </div>
           <div class="summary-line">
             <span>Incluye:</span>
@@ -1887,10 +1902,10 @@
         </div>
 
         <div class="btn-group" style="justify-content: center;">
-          <a href="https://wa.link/b2z6ed" target="_blank" rel="noopener" class="btn btn-electric" onclick="trackClickEvent('final_cta_main')">
+          <a href="https://wa.me/50765278910?text=Hola%20Tu%20Marca%20Local%2C%20quiero%20informaci%C3%B3n%20sobre%20una%20p%C3%A1gina%20web" target="_blank" rel="noopener" class="btn btn-electric" onclick="trackClickEvent('final_cta_main')">
             SÍ, QUIERO MI PÁGINA WEB
           </a>
-          <a href="https://wa.link/b2z6ed" target="_blank" rel="noopener" class="btn btn-outline-white" onclick="trackClickEvent('final_cta_question')">
+          <a href="https://wa.me/50765278910?text=Hola%20Tu%20Marca%20Local%2C%20quiero%20informaci%C3%B3n%20sobre%20una%20p%C3%A1gina%20web" target="_blank" rel="noopener" class="btn btn-outline-white" onclick="trackClickEvent('final_cta_question')">
             TENGO UNA PREGUNTA
           </a>
         </div>
@@ -1899,7 +1914,7 @@
           <p>
             ¿Tienes alguna duda puntual? Comunícate por WhatsApp únicamente si tienes alguna consulta que no esté explicada en esta página.
           </p>
-          <a href="https://wa.link/b2z6ed" target="_blank" rel="noopener" class="btn btn-whatsapp" style="padding: 10px 24px; font-size: 0.85rem;" onclick="trackClickEvent('wa_doubts_click')">
+          <a href="https://wa.me/50765278910?text=Hola%20Tu%20Marca%20Local%2C%20quiero%20informaci%C3%B3n%20sobre%20una%20p%C3%A1gina%20web" target="_blank" rel="noopener" class="btn btn-whatsapp" style="padding: 10px 24px; font-size: 0.85rem;" onclick="trackClickEvent('wa_doubts_click')">
             CONSULTAR POR WHATSAPP
           </a>
         </div>
@@ -2000,7 +2015,7 @@
        ======================================================== -->
   <script>
     document.getElementById('current-year').textContent = new Date().getFullYear();
-    const WHATSAPP_LINK = "https://wa.link/b2z6ed";
+    const WHATSAPP_LINK = "https://wa.me/50765278910";
 
     function trackClickEvent(actionLabel) {
       if (typeof fbq === 'function') {
@@ -2222,7 +2237,7 @@
           <h4 style="color:#0B192C; margin-bottom:8px;">Naturaleza de los servicios</h4>
           <p style="margin-bottom:12px;">Tu Marca Local ofrece servicios de diseño web y configuración de presencia digital. No garantiza un volumen específico de ventas, consultas o clientes, los cuales dependen de factores del mercado.</p>
           <h4 style="color:#0B192C; margin-bottom:8px;">Modelos de demostración</h4>
-          <p>Los modelos exhibidos son ficticios e ilustrativos para mostrar estilos de diseño posibles.</p>
+          <p>Los modelos marcados como "Negocio Ilustrativo" son ficticios y sirven para mostrar estilos de diseño posibles. Cocos Tour PTY es un proyecto real de cliente.</p>
         `
       },
       terminos: {
