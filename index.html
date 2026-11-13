@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TU MARCA LOCAL | Páginas Web Profesionales para Negocios</title>
-  
-  <!-- Favicon Oficial -->
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="apple-touch-icon" href="favicon.png">
-  
-  <meta name="description" content="Páginas web profesionales para negocios locales desde $112. Dominio y hosting incluidos el primer año. Atrae clientes y convierte por WhatsApp.">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TU MARCA LOCAL | Páginas Web Profesionales para Negocios</title>
@@ -681,17 +672,18 @@
       font-size: 0.85rem;
       font-weight: 700;
       color: #DC2626;
-      line-height: 1.4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
     }
     .pulsing-dot {
-      display: inline-block;
       width: 8px;
       height: 8px;
       background: #DC2626;
       border-radius: 50%;
       animation: pulse 1.4s infinite;
-      vertical-align: middle;
-      margin-right: 6px;
+      flex-shrink: 0;
     }
     @keyframes pulse {
       0% { opacity: 1; transform: scale(1); }
@@ -803,11 +795,6 @@
       font-size: 1.25rem;
       font-weight: 900;
       color: var(--color-electric);
-    }
-    .summary-total span:first-child {
-      font-size: 0.95rem;
-      font-weight: 700;
-      color: var(--color-navy);
     }
 
     /* ========================================================
@@ -1191,11 +1178,9 @@
         text-align: left;
       }
       .summary-line.summary-total {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 4px;
-        border-bottom: none;
-        padding-bottom: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
       }
       .quote-box .btn-whatsapp {
         width: 100%;
@@ -1215,23 +1200,10 @@
         padding: 14px 20px;
       }
       .sales-toast {
-        bottom: 90px; /* Flota con más margen sobre el dock móvil */
+        bottom: 82px; /* Flota sobre el dock móvil */
         left: 14px;
-        right: auto;
-        max-width: 240px;
-        padding: 10px 12px;
-        gap: 8px;
-      }
-      .sales-toast .toast-icon {
-        width: 26px;
-        height: 26px;
-        font-size: 0.75rem;
-      }
-      .sales-toast .toast-text {
-        font-size: 0.7rem;
-      }
-      .sales-toast .toast-time {
-        display: none; /* ahorra espacio en pantallas pequeñas */
+        right: 14px;
+        max-width: calc(100% - 28px);
       }
       body {
         padding-bottom: 75px; /* Espacio final para que el dock no tape el footer */
@@ -1560,7 +1532,7 @@
             Entrega estimada de 3 a 5 días hábiles, sujeta a confirmación y entrega de datos.
           </p>
 
-          <a href="https://wa.me/50765278910" target="_blank" rel="noopener" class="btn btn-electric" onclick="trackClickEvent('buy_plan_112')">
+          <a href="https://wa.link/b2z6ed" target="_blank" rel="noopener" class="btn btn-electric" onclick="trackClickEvent('buy_plan_112')">
             QUIERO MI WEB POR $112
           </a>
 
@@ -1591,7 +1563,7 @@
             <p style="font-size: 0.72rem; color: #166534; margin-top: 4px;">*Bonos solo incluidos al contratar este paquete.</p>
           </div>
 
-          <a href="https://wa.me/50765278910" target="_blank" rel="noopener" class="btn btn-navy" onclick="trackClickEvent('buy_plan_197')">
+          <a href="https://wa.link/b2z6ed" target="_blank" rel="noopener" class="btn btn-navy" onclick="trackClickEvent('buy_plan_197')">
             QUIERO MI PRESENCIA DIGITAL COMPLETA
           </a>
 
@@ -1915,10 +1887,10 @@
         </div>
 
         <div class="btn-group" style="justify-content: center;">
-          <a href="https://wa.me/50765278910" target="_blank" rel="noopener" class="btn btn-electric" onclick="trackClickEvent('final_cta_main')">
+          <a href="https://wa.link/b2z6ed" target="_blank" rel="noopener" class="btn btn-electric" onclick="trackClickEvent('final_cta_main')">
             SÍ, QUIERO MI PÁGINA WEB
           </a>
-          <a href="https://wa.me/50765278910" target="_blank" rel="noopener" class="btn btn-outline-white" onclick="trackClickEvent('final_cta_question')">
+          <a href="https://wa.link/b2z6ed" target="_blank" rel="noopener" class="btn btn-outline-white" onclick="trackClickEvent('final_cta_question')">
             TENGO UNA PREGUNTA
           </a>
         </div>
@@ -1927,7 +1899,7 @@
           <p>
             ¿Tienes alguna duda puntual? Comunícate por WhatsApp únicamente si tienes alguna consulta que no esté explicada en esta página.
           </p>
-          <a href="https://wa.me/50765278910" target="_blank" rel="noopener" class="btn btn-whatsapp" style="padding: 10px 24px; font-size: 0.85rem;" onclick="trackClickEvent('wa_doubts_click')">
+          <a href="https://wa.link/b2z6ed" target="_blank" rel="noopener" class="btn btn-whatsapp" style="padding: 10px 24px; font-size: 0.85rem;" onclick="trackClickEvent('wa_doubts_click')">
             CONSULTAR POR WHATSAPP
           </a>
         </div>
@@ -2028,7 +2000,7 @@
        ======================================================== -->
   <script>
     document.getElementById('current-year').textContent = new Date().getFullYear();
-    const WHATSAPP_LINK = "https://wa.me/50765278910";
+    const WHATSAPP_LINK = "https://wa.link/b2z6ed";
 
     function trackClickEvent(actionLabel) {
       if (typeof fbq === 'function') {
